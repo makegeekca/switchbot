@@ -348,15 +348,15 @@
 /* Motion and Contact and Meter: (CAN BE MESHED) Enter the MAC addresses of the switchbot devices into all or most of the ESP32s */
 
 /* Wifi Settings */
-static const char* host = "esp32";                                  //  Unique name for ESP32. The name detected by your router and MQTT. If you are using more then 1 ESPs to control different switchbots be sure to use unique hostnames. Host is the MQTT Client name and is used in MQTT topics
-static const char* ssid = "SSID";                                   //  WIFI SSID
-static const char* password = "Password";                           //  WIFI Password
+static const char* host = "switchbot-ice";                                  //  Unique name for ESP32. The name detected by your router and MQTT. If you are using more then 1 ESPs to control different switchbots be sure to use unique hostnames. Host is the MQTT Client name and is used in MQTT topics
+static const char* ssid = "BillWI,theScienceFI";                                   //  WIFI SSID
+static const char* password = "5877857899";                           //  WIFI Password
 
 /* MQTT Settings */
 /* MQTT Client name is set to WIFI host from Wifi Settings*/
-static const char* mqtt_host = "192.168.0.1";                       //  MQTT Broker server ip
+static const char* mqtt_host = "192.168.86.4";                      //  MQTT Broker server ip
 static const char* mqtt_user = "switchbot";                         //  MQTT Broker username. If empty or NULL, no authentication will be used
-static const char* mqtt_pass = "switchbot";                         //  MQTT Broker password
+static const char* mqtt_pass = "7Z6UYJwMech82zk2";                  //  MQTT Broker password
 static const int mqtt_port = 1883;                                  //  MQTT Port
 static const std::string mqtt_main_topic = "switchbot";             //  MQTT main topic
 
